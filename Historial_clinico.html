@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clínica Dental - Dentistas</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #004a7c;
+      padding: 30px;
+      text-align: center;
+      color: white;
+    }
+
+    nav {
+      width: 100%;
+      background: #00bcd4;
+      padding: 15px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+    }
+    nav ul li a { /* Añadido para que los enlaces se vean blancos */
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    nav ul li a:hover {
+      color: #004a7c; 
+    }
+
+    article h2 {
+      color: #81abc5;
+      text-align: center;
+    }
+
+    /* Estilos para la Tabla */
+    table {
+      width: 90%;
+      margin: 20px auto;
+      border-collapse: collapse;
+      background-color: white;
+    }
+
+    table th, table td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: left;
+    }
+
+    table th {
+      background-color: #81abc5;
+      color: white;
+    }
+
+    table tr:nth-child(even) {
+      background-color: #9fc2e7;
+    }
+
+    footer {
+      background-color: #777;
+      padding: 20px;
+      text-align: center;
+      color: white; 
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h2>Clínica Dental La Casa del Ratón Pérez</h2>
+  <img src="raton_perez.png" alt="logo del raton perez" width="100">
+</header>
+
+<nav>
+  <ul>
+    <li><a href="inicio.html">INICIO</a></li> 
+    <li><a href="Paciente.html">PACIENTES</a></li> 
+    <li><a href="Historial_clinico.html">HISTORIAL CLÍNICO</a></li> 
+    <li><a href="Dentistas.html">DENTISTAS</a></li> 
+    <li><a href="Consultorio.html">CONSULTORIO</a></li> 
+  </ul>
+</nav>
+
+<section>
+  <article>
+    <h2>HISTORIAL CLINICO</h2>
+  </article>
+</section>
+
+
+<main>
+<table>
+  <thead>
+    <tr>
+      <th>ID Paciente</th>
+      <th>Doctor Responsable</th>
+      <th>Procedimiento</th>
+      <th>Reprogramación</th>
+      <th>Adeudo</th>
+      <th>Sala</th>
+      <th>Hora de Atención</th>
+      <th>Historial Clínico</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>001</td>
+      <td>Helena</td>
+      <td>Limpieza Dental</td>
+      <td>Viernes 8 a las 5:15 pm</td>
+      <td>500</td>
+      <td>Tres</td>
+      <td>5:30 pm</td>
+      <td>Extracción de muelas</td>
+    </tr>
+    <tr>
+      <td>002</td>
+      <td>Saúl</td>
+      <td>Mantenimiento de Brackets</td>
+      <td>Lunes 19 a las 6:30 pm</td>
+      <td>20</td>
+      <td>Cinco</td>
+      <td>7:20 pm</td>
+      <td>1 año de brackets</td>
+    </tr>
+    <tr>
+      <td>003</td>
+      <td>Andrés</td>
+      <td>Prótesis Dentales</td>
+      <td>Martes 10 a las 4:20 pm</td>
+      <td>350</td>
+      <td>Uno</td>
+      <td>5:30 pm</td>
+      <td>5 limpiezas dentales y una extracción de muelas</td>
+    </tr>
+    <tr>
+      <td>004</td>
+      <td>Carlos</td>
+      <td>Instalación de Brackets</td>
+      <td>Ninguna por el momento</td>
+      <td>350</td>
+      <td>Dos</td>
+      <td>4:20 pm</td>
+      <td>Coronas y brackets finalizados (3 años)</td>
+    </tr>
+    <tr>
+      <td>005</td>
+      <td>Helena</td>
+      <td>Coronas Dentales</td>
+      <td>Lunes 9 a las 7:30 am</td>
+      <td>0</td>
+      <td>Cinco</td>
+      <td>2:30 pm</td>
+      <td>1 limpieza y una endodoncia</td>
+    </tr>
+    <tr>
+      <td>006</td>
+      <td>Elsa</td>
+      <td>Extracción de Muelas del Juicio</td>
+      <td>Jueves 17 a las 3:20 pm</td>
+      <td>0</td>
+      <td>Tres</td>
+      <td>2:30 pm</td>
+      <td>5 meses de brackets</td>
+    </tr>
+    <tr>
+      <td>007</td>
+      <td>Saúl</td>
+      <td>Limpieza Dental</td>
+      <td>Jueves 3 a las 8:20 am</td>
+      <td>37</td>
+      <td>Cinco</td>
+      <td>9:20 am</td>
+      <td>Coronas dentales</td>
+    </tr>
+    <tr>
+      <td>008</td>
+      <td>Carlos</td>
+      <td>Mantenimiento de Brackets</td>
+      <td>Ninguna por el momento</td>
+      <td>100</td>
+      <td>Tres</td>
+      <td>6:20 pm</td>
+      <td>2 limpiezas y 4 meses de brackets</td>
+    </tr>
+    <tr>
+      <td>009</td>
+      <td>Andrés</td>
+      <td>Coronas Dentales</td>
+      <td>Miércoles 5 a las 9:20 am</td>
+      <td>50</td>
+      <td>Tres</td>
+      <td>12:20 pm</td>
+      <td>Una endodoncia</td>
+    </tr>
+    <tr>
+      <td>010</td>
+      <td>Saúl</td>
+      <td>Limpieza Dental</td>
+      <td>Viernes 19 a las 9:20 am</td>
+      <td>100</td>
+      <td>Cuatro</td>
+      <td>6:20 pm</td>
+      <td>Tres años de brackets</td>
+    </tr>
+  </tbody>
+</table>
+  </main>
+
+<footer>
+  <p>MADRID DE LA CRUZ VALERIA DAYNA | 4°J | No.2408951 | Programación</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Clínica Dental La Casa del Ratón Pérez</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #004a7c;
+      padding: 40px;
+      text-align: center;
+      color: white;
+    }
+
+// IMPORTANTE VALERIA REVISA SI LA IMAGEN COINCIDE
+    header img {
+      margin-top: 10px;
+      border-radius: 50%; /* Opcional: Hace el logo circular si es cuadrado */
+    }
+
+   nav {
+      width: 100%;
+      background: #00bcd4;
+      padding: 15px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+    }
+    nav ul li a { 
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    nav ul li a:hover {
+      color: #004a7c; 
+    }
+
+   article {
+      padding: 40px;
+      width: 90%;          
+      max-width: 800px;     /* Bajado a 800px para que las líneas de texto no sean tan largas y pesadas de leer */
+      margin: 40px auto;    
+      background-color: white; 
+      min-height: 300px;
+      border-radius: 12px;  
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08); /* Sombra más suave y moderna */
+    }
+
+    article h2 {
+      color: #004a7c;
+      font-size: 1.8rem;
+      margin-top: 0; /* Elimina espacio innecesario arriba */
+    }
+
+    article h3 {
+      color: #008196;
+      font-size: 1.4rem;
+      margin-top: 30px;
+    }
+
+    /* Un pequeño detalle para que la lista de especialidades no se vea tan simple */
+    article ul {
+      padding-left: 20px;
+    }
+    
+    article ul li {
+      margin-bottom: 8px;
+    }
+
+
+    footer {
+      background-color: #222;
+      padding: 25px;
+      text-align: center;
+      color: white;
+      font-size: 0.9rem;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+      }
+      article {
+        width: 95%; 
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h2>Clínica Dental La Casa del Ratón Pérez</h2>
+  <img src="raton_perez.png" alt="logo del raton perez" width="100">
+</header>
+
+<nav>
+  <ul>
+    <li><a href="inicio.html">INICIO</a></li> 
+    <li><a href="Paciente.html">PACIENTES</a></li> 
+    <li><a href="Historial_clinico.html">HISTORIAL CLINICO</a></li> 
+    <li><a href="Dentistas.html">DENTISTAS</a></li> 
+    <li><a href="Consultorio.html">CONSULTORIO</a></li> 
+  </ul>
+</nav>
+
+<section>
+  <article>
+    <h2>Bienvenidos</h2>
+    <p>En <strong>La Casa del Ratón Pérez</strong>, combinamos la ciencia dental más avanzada con un trato humano excepcional. Somos especialistas en transformar sonrisas mediante tecnología digital, desde escaneo intraoral hasta implantes de carga inmediata.</p>
+    <p>Nuestro compromiso es ofrecer diagnósticos precisos y tratamientos mínimamente invasivos en un entorno diseñado para tu máximo confort.</p>
+    
+    <h3>Nuestras Especialidades</h3>
+    <ul>
+      <li>Endodoncia</li>
+      <li>Periodoncia</li>
+      <li>Implantología</li>
+      <li>Ortodoncia</li>
+    </ul>
+  </article>
+</section>
+
+<footer>
+  <p>MADRID DE LA CRUZ VALERIA DAYNA   4°J   No.2408951   Programación</p>
+</footer>
+
+</body>
+</html>

@@ -5,16 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Clínica Dental - Dentistas</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Arial, sans-serif;
       margin: 0;
       padding: 0;
       line-height: 1.6;
+      background-color: #f0f4f8;
+      color: #333333;
     }
 
     header {
-      background-color: #004a7c;
-      padding: 30px;
+      background-color: #1c90ab;
+      padding: 40px;
       text-align: center;
       color: white;
     }
@@ -33,11 +38,13 @@
       justify-content: center;
       gap: 50px;
     }
-    nav ul li a { /* Añadido para que los enlaces se vean blancos */
+
+    nav ul li a { 
       color: white;
       text-decoration: none;
       font-weight: bold;
       letter-spacing: 1px;
+      transition: color 0.3s ease; 
     }
 
     nav ul li a:hover {
@@ -45,11 +52,14 @@
     }
 
     article h2 {
-      color: #81abc5;
+      color: #004a7c;
+      font-size: 3rem;
+      margin-top: 0; 
+      border-bottom: 3px solid #00bcd4; 
+      padding-bottom: 10px;
       text-align: center;
     }
 
-    /* Estilos para la Tabla */
     table {
       width: 90%;
       margin: 20px auto;
@@ -84,8 +94,8 @@
 <body>
 
 <header>
+  <img src="raton.png" alt="logo del raton perez" width="250">
   <h2>Clínica Dental La Casa del Ratón Pérez</h2>
-  <img src="raton_perez.png" alt="logo del raton perez" width="100">
 </header>
 
 <nav>
@@ -104,19 +114,18 @@
   </article>
 </section>
 
-
 <main>
 <table>
   <thead>
     <tr>
-      <th>ID Paciente</th>
-      <th>Doctor Responsable</th>
-      <th>Procedimiento</th>
-      <th>Reprogramación</th>
-      <th>Adeudo</th>
-      <th>Sala</th>
-      <th>Hora de Atención</th>
-      <th>Historial Clínico</th>
+      <th>ID PACIENTE</th>
+      <th>DOCTOR RESPONSABLE</th>
+      <th>PROCEDIMIENTO</th>
+      <th>REPROGRAMACIÓN</th>
+      <th>ADEUDO</th>
+      <th>SALA</th>
+      <th>HORA DE ATENCIÓN</th>
+      <th>HISTORIAL CLÍNICO</th>
     </tr>
   </thead>
   <tbody>

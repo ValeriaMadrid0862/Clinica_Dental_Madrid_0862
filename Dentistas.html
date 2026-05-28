@@ -5,16 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Clínica Dental - Dentistas</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Arial, sans-serif;
       margin: 0;
       padding: 0;
       line-height: 1.6;
+      background-color: #f0f4f8;
+      color: #333333;
     }
 
     header {
-      background-color: #004a7c;
-      padding: 30px;
+      background-color: #1c90ab;
+      padding: 40px;
       text-align: center;
       color: white;
     }
@@ -38,6 +43,7 @@
       text-decoration: none;
       font-weight: bold;
       letter-spacing: 1px;
+      transition: color 0.3s ease; 
     }
 
     nav ul li a:hover {
@@ -45,11 +51,14 @@
     }
 
     article h2 {
-      color: #fdb220;
+      color: #004a7c;
+      font-size: 3rem;
+      margin-top: 0; 
+      border-bottom: 3px solid #00bcd4; 
+      padding-bottom: 10px;
       text-align: center;
     }
 
-    /* Estilos para la Tabla */
     table {
       width: 90%;
       margin: 20px auto;
@@ -64,13 +73,14 @@
     }
 
     table th {
-      background-color: #fdb220;
+      background-color: #ffe200;
       color: white;
     }
 
     table tr:nth-child(even) {
-      background-color: #eec820;
+      background-color: #fffa72;
     }
+
 
     footer {
       background-color: #777;
@@ -84,8 +94,8 @@
 <body>
 
 <header>
+  <img src="raton.png" alt="logo del raton perez" width="300">
   <h2>Clínica Dental La Casa del Ratón Pérez</h2>
-  <img src="raton_perez.png" alt="logo del raton perez" width="100">
 </header>
 
 <nav>
@@ -100,7 +110,7 @@
 
 <section>
   <article>
-    <h2>DENTISTA</h2>
+    <h2>DENTISTAS</h2>
   </article>
 </section>
 
@@ -108,14 +118,14 @@
   <table>
     <thead>
       <tr>
-        <th>ID Paciente</th>
-        <th>Nombre del Doctor</th>
-        <th>Especialidad</th>
-        <th>Turno</th>
-        <th>Horario</th>
+        <th>ID PACIENTE</th>
+        <th>NOMBRE DEL DOCTOR</th>
+        <th>ESPECIALIDAD</th>
+        <th>TURNO</th>
+        <th>HORARIO</th>
         <th>RFC</th>
-        <th>Teléfono</th>
-        <th>Cédula</th>
+        <th>TELÉFONO</th>
+        <th>CÉDULA</th>
       </tr>
     </thead>
     <tbody>

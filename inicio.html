@@ -13,22 +13,18 @@
       margin: 0;
       padding: 0;
       line-height: 1.6;
+      background-color: #f0f4f8;
+      color: #333333;
     }
 
-    header {
-      background-color: #004a7c;
+   header {
+      background-color: #1c90ab;
       padding: 40px;
       text-align: center;
       color: white;
     }
 
-// IMPORTANTE VALERIA REVISA SI LA IMAGEN COINCIDE
-    header img {
-      margin-top: 10px;
-      border-radius: 50%; /* Opcional: Hace el logo circular si es cuadrado */
-    }
-
-   nav {
+    nav {
       width: 100%;
       background: #00bcd4;
       padding: 15px;
@@ -42,68 +38,110 @@
       justify-content: center;
       gap: 50px;
     }
+
     nav ul li a { 
       color: white;
       text-decoration: none;
       font-weight: bold;
       letter-spacing: 1px;
+      transition: color 0.3s ease; 
     }
 
     nav ul li a:hover {
       color: #004a7c; 
     }
 
-   article {
+    article {
       padding: 40px;
       width: 90%;          
-      max-width: 800px;     /* Bajado a 800px para que las líneas de texto no sean tan largas y pesadas de leer */
+      max-width: 1100px;     
       margin: 40px auto;    
       background-color: white; 
       min-height: 300px;
-      border-radius: 12px;  
-      box-shadow: 0 4px 20px rgba(0,0,0,0.08); /* Sombra más suave y moderna */
+      border-radius: 16px; 
+      box-shadow: 0 10px 30px rgba(0, 74, 124, 0.06);     }
+
+    .texto-bienvenida {
+      margin-top: 40px;
+      padding: 25px;
+      background-color: #f9fbfd; 
+      border-radius: 12px;
+      border: 1px solid #e1e9f0;
     }
 
     article h2 {
       color: #004a7c;
-      font-size: 1.8rem;
-      margin-top: 0; /* Elimina espacio innecesario arriba */
+      font-size: 2rem;
+      margin-top: 0; 
+      border-bottom: 3px solid #00bcd4; 
+      padding-bottom: 10px;
+      display: inline-block;
     }
 
     article h3 {
       color: #008196;
       font-size: 1.4rem;
-      margin-top: 30px;
+      margin-top: 35px;
     }
 
-    /* Un pequeño detalle para que la lista de especialidades no se vea tan simple */
     article ul {
-      padding-left: 20px;
+      padding-left: 0;
+      list-style-type: none; 
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+      gap: 15px;
+      margin-top: 15px;
     }
     
     article ul li {
-      margin-bottom: 8px;
+      background-color: #f4f9fc;
+      color: #004a7c;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-weight: 600;
+      text-align: center;
+      border-left: 4px solid #00bcd4;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.02);
     }
 
+    .contacto-rapido {
+      margin-top: 40px;
+      padding: 25px;
+      background-color: #f9fbfd; 
+      border-radius: 12px;
+      border: 1px solid #e1e9f0;
+    }
+
+    .contacto-rapido h3 {
+      margin-top: 0;
+      margin-bottom: 15px;
+    }
+
+    .contacto-rapido p {
+      margin: 10px 0;
+      font-size: 0.95rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
 
     footer {
-      background-color: #222;
-      padding: 25px;
+      background-color: #777;
+      padding: 20px;
       text-align: center;
-      color: white;
-      font-size: 0.9rem;
-      margin-top: 40px;
-    }
+      color: white; 
+      margin-top: 20px;
+     }
 
     @media (max-width: 600px) {
       nav ul {
         flex-direction: column;
-        gap: 10px;
+        gap: 15px;
         text-align: center;
       }
       article {
         width: 95%; 
-        padding: 20px;
+        padding: 45px 20px;
       }
     }
   </style>
@@ -111,8 +149,8 @@
 <body>
 
 <header>
-  <h2>Clínica Dental La Casa del Ratón Pérez</h2>
-  <img src="raton_perez.png" alt="logo del raton perez" width="100">
+  <img src="raton.png" alt="logo del raton perez" width="300">
+  <h1>Clínica Dental La Casa del Ratón Pérez</h2>
 </header>
 
 <nav>
@@ -127,10 +165,11 @@
 
 <section>
   <article>
+    <div class="texto-bienvenida">
     <h2>Bienvenidos</h2>
     <p>En <strong>La Casa del Ratón Pérez</strong>, combinamos la ciencia dental más avanzada con un trato humano excepcional. Somos especialistas en transformar sonrisas mediante tecnología digital, desde escaneo intraoral hasta implantes de carga inmediata.</p>
     <p>Nuestro compromiso es ofrecer diagnósticos precisos y tratamientos mínimamente invasivos en un entorno diseñado para tu máximo confort.</p>
-    
+    </div>
     <h3>Nuestras Especialidades</h3>
     <ul>
       <li>Endodoncia</li>
@@ -138,6 +177,13 @@
       <li>Implantología</li>
       <li>Ortodoncia</li>
     </ul>
+
+    <div class="contacto-rapido">
+      <h3>Horarios y Ubicación</h3>
+      <p><strong>Dirección:</strong> Av. de la Sonrisa Alegre #123, Col. Centro</p>
+      <p><strong>Teléfono:</strong> (55) 1234-5678</p>
+      <p><strong>Horario:</strong> Lunes a Viernes de 9:00 AM a 7:00 PM | Sábados de 9:00 AM a 2:00 PM</p>
+    </div>
   </article>
 </section>
 
